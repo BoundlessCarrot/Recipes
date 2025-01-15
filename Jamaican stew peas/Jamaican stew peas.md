@@ -1,5 +1,4 @@
 # Jamaican Stew Peas (Vegan, Gluten Free)
-
 This is my vegan rendition of the infamous Jamaican stew peas. Made from red kidney beans that are simmered until soft with a medley of vegetables, herbs and spices.
 
 **Course:** Main Course  
@@ -9,7 +8,7 @@ This is my vegan rendition of the infamous Jamaican stew peas. Made from red kid
 **Total Time:** 2 hours 5 minutes  
 **Servings:** 6 people  
 **Calories:** 318kcal  
-**Author:** Charla
+**Author:** Charla (Taken by Jordan from [source](https://thatgirlcookshealthy.com/jamaican-stew-peas/))
 
 ## Ingredients
 
