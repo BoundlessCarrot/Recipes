@@ -1,0 +1,38 @@
+>> metadata {
+    name: Dutch Oven Whole Roast Chicken
+    prep time: 15 min
+    cook time: 1 hr 30 min
+    rest time: 10 min
+    servings: 4
+    calories: 554 kcal
+}
+
+-- Equipment needed: #dutch oven{}, #meat thermometer{}, #kitchen twine{}
+
+Preheat oven to @temperature{475°F}.
+
+-- Prepare Butter Mixture
+Melt @butter{4 tbsp} in a #small bowl{}. Add @garlic{3%minced} cloves, @rosemary{2%chopped tbsp}, and the zest of @lemons{2}. Season with @kosher salt{} and @black pepper{} to taste. Set aside.
+
+-- Prepare Baking Dish
+Place @onions{2%halved and thickly sliced, large} in the bottom of the dutch oven. Reserve end onion scraps. If using, add @potatoes{1.5 lbs%cut into 1" pieces} on top of the onions.
+
+-- Prepare Chicken
+Remove giblets from @whole chicken{4-5 lbs}. Pat chicken dry with #paper towels{}. Liberally season the cavity with salt and pepper. Cut zested lemons in half; reserve juice and save rinds.
+
+-- Season Chicken
+Slather butter mixture over entire chicken. Carefully spread mixture under breast skin (without tearing). Stuff cavity with lemon rinds, onion scraps, @garlic for cavity{2%halved} cloves, and @rosemary sprig{1%whole}.
+
+-- Roasting
+Place chicken in dutch oven on top of onions and potatoes. Tie chicken legs together tightly with kitchen twine. Pour reserved lemon juice over chicken.
+
+Roast UNCOVERED for ~{15 minutes} at 475°F. Reduce heat to @lower temperature{350°F} and cook for approximately 20 minutes per pound, until internal temperature reaches 165°F (~{75 minutes} for a 4.5 lb chicken).
+
+Let chicken rest for ~{10 minutes} before carving.
+
+Notes:
+- Basting is optional, can baste halfway through cooking
+- Use 1-2 tablespoons kosher salt and pepper to taste (1/2 to 2 teaspoons)
+- If chicken is burning, can cover lid slightly ajar or tent with foil
+- For dairy-free version, use olive oil or ghee instead of butter
+- If sensitive to lemon flavor, use only 1 lemon

@@ -1,0 +1,29 @@
+>> metadata {
+    name: Baked Mac & Cheese
+    prep time: 25 min
+    cook time: 30 min
+}
+
+Preheat oven to @temperature{175°C}.
+
+Grate the @Vermont sharp cheddar cheese{240 ml}, @medium cheddar cheese{240 ml}, and @extra sharp white cheddar cheese{240 ml}, reserving 1/3 of the total (about 480 ml) for the topping. Use a mix of 2/3 Vermont sharp cheddar, 1/3 medium cheddar, and 1/3 extra sharp white cheddar.
+
+Melt the @butter{60 ml} in a #large saucepan{}. Reduce heat to very low and mix in the @all-purpose flour{60 ml} until a smooth paste is formed.
+
+Add in the @salt{5 ml}, @black pepper{1.25 ml}, and @cayenne pepper{1.25 ml}.
+
+Increase heat to medium, slowly pour in the @evaporated milk{3%227 ml cans} and continue to stir the sauce until thickened.
+
+Add in the @egg{1%beaten}, mixing briskly.
+
+As the sauce starts to thicken, add in the grated cheeses and stir until melted.
+
+Stir in the @sour cream{240 ml} and @sugar{15 ml}.
+
+Place the cooked @elbow macaroni{454 g} in a #casserole dish{} and mix in the cheese sauce.
+
+Top with the reserved grated cheese.
+
+Sprinkle evenly with @paprika{}.
+
+Bake uncovered in the oven for ~{30 minutes}, until hot and bubbly.
