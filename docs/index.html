@@ -9,9 +9,9 @@
 
 <body>
   <header>
-    <h1 style="margin-right: 1rem">Jordan's Family Recipe Repository</h1>
-    <nav>
-      <a href="/">Home</a>
+    <h1>Jordan's Family Recipe Repository</h1>
+    <nav style="text-align: center;">
+      <a href="/Recipes">Home</a>
       |
       <a href="https://github.com/BoundlessCarrot/Recipes" target="_blank">Source files</a>
     </nav>
@@ -20,13 +20,41 @@
   <main>
     <section>
       <ul>
-        <?php
-          $recipes = glob('recipes/*.html');
-          foreach ($recipes as $recipe) {
-            $recipe_name = basename($recipe, '.html');
-            echo "<li><a href=\"$recipe\">$recipe_name</a></li>";
+        <script>
+          // Function to get all markdown files recursively
+          async function getMarkdownFiles() {
+            try {
+              const response = await fetch('/list-files');
+              const files = await response.json();
+              
+              const fileList = document.createElement('div');
+              
+              files.forEach(file => {
+                // Skip README.md
+                if (file === 'README.md') return;
+                
+                // Convert markdown path to html path
+                const htmlPath = file.replace('.md', '.html');
+                // Get clean name without extension 
+                const name = file.split('/').pop().replace('.md', '');
+                
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = htmlPath;
+                link.textContent = name;
+                listItem.appendChild(link);
+                fileList.appendChild(listItem);
+              });
+              
+              document.querySelector('ul').appendChild(fileList);
+            } catch (err) {
+              console.error('Error loading files:', err);
+            }
           }
-        ?>
+
+          // Call the function when page loads
+          window.addEventListener('load', getMarkdownFiles);
+        </script>
       </ul>
     </section>
   </main> 
