@@ -14,39 +14,51 @@
       <a href="/Recipes">Home</a>
       |
       <a href="https://github.com/BoundlessCarrot/Recipes" target="_blank">Source files</a>
+      |
+      <a href="https://github.com/BoundlessCarrot/Recipes/discussions" target="_blank">Talk about a recipe!</a>
     </nav>
   </header>
 
   <main>
     <section>
-      <ul>
+      <div id="recipe-list" style="text-align: left;">
         <script>
-          // Function to get all markdown files recursively
           async function getMarkdownFiles() {
+            const apiUrl = 'https://api.github.com/repos/BoundlessCarrot/Recipes/contents/';
             try {
-              const response = await fetch('/list-files');
-              const files = await response.json();
+              const response = await fetch(apiUrl);
+              const contents = await response.json();
+
+              let mdFiles = [];
+
+              for (const item of contents) {
+                if (item.type === 'dir') {
+                  const subResponse = await fetch(`${apiUrl}${item.path}`);
+                  const subContents = await subResponse.json();
+                  for (const subItem of subContents) {
+                    if (subItem.name.endsWith('.md')) {
+                      mdFiles.push({
+                        path: subItem.path,
+                        name: subItem.name.replace('.md', '')
+                      });
+                    }
+                  }
+                } else if (item.name.endsWith('.md') && item.name !== 'README.md') {
+                  mdFiles.push({
+                    path: item.path,
+                    name: item.name.replace('.md', '')
+                  });
+                }
+              }
               
-              const fileList = document.createElement('div');
-              
-              files.forEach(file => {
-                // Skip README.md
-                if (file === 'README.md') return;
-                
-                // Convert markdown path to html path
-                const htmlPath = file.replace('.md', '.html');
-                // Get clean name without extension 
-                const name = file.split('/').pop().replace('.md', '');
-                
-                const listItem = document.createElement('li');
+              mdFiles.forEach(file => {
+                const div = document.createElement('div');
                 const link = document.createElement('a');
-                link.href = htmlPath;
-                link.textContent = name;
-                listItem.appendChild(link);
-                fileList.appendChild(listItem);
+                link.href = file.path.replace('.md', '.html');
+                link.textContent = file.name;
+                div.appendChild(link);
+                document.getElementById('recipe-list').appendChild(div);
               });
-              
-              document.querySelector('ul').appendChild(fileList);
             } catch (err) {
               console.error('Error loading files:', err);
             }
@@ -55,7 +67,7 @@
           // Call the function when page loads
           window.addEventListener('load', getMarkdownFiles);
         </script>
-      </ul>
+      </div>
     </section>
   </main> 
 
